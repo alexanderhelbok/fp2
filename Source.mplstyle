@@ -1,0 +1,23 @@
+# define plot parameters
+xtick.direction : in
+ytick.direction : in
+# enable minor ticks
+xtick.minor.visible : True
+ytick.minor.visible : True
+# enable ticks on top and right
+xtick.top : True
+ytick.right : True
+# increase tick length
+xtick.major.size : 7
+xtick.minor.size : 3.5
+ytick.major.size : 7
+ytick.minor.size : 3.5
+# increase tick label pad
+xtick.major.pad : 7
+xtick.minor.pad : 7
+ytick.major.pad : 7
+ytick.minor.pad : 7
+# increase border width
+axes.linewidth : 1.25
+# increase legend axespad
+legend.borderaxespad : 1

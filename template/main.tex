@@ -1,0 +1,91 @@
+% Header: Here are all packages used and some additional definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,a4paper]{scrartcl}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{graphicx} % zum Einbinden von Graphiken
+\usepackage{float}
+\usepackage[ngerman]{babel}
+\usepackage[font=footnotesize, bf, format=plain, font=normalsize]{caption}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage[hidelinks]{hyperref} % f. Referenzen
+\usepackage{amsmath,amsthm,amssymb} % Mathematik Umgebung 
+\usepackage{icomma} % Intelligentes Komma, das den richtigen Abstand zwischen Dezimalzahlen als auch in Formeln wählt.
+\usepackage[ngerman]{babel} % Deutsche Bezeichnungen bei Inhaltsangabe etc
+%\usepackage[T1]{fontenc}    % andere Schriftsatzkodierung für richtige Silbentrennung bei Umlauten
+\usepackage[locale = DE,space-before-unit=true,per-mode = fraction]{siunitx} % Bessere Einheiten
+\usepackage{booktabs,multirow} % Pakete zur Erstellung von Tabellen
+\usepackage{placeins} % Definiert den Befehl “\FloatBarrier”, der die Ausgabe der davor eingebundenen Bilder erzwingt, befor der Text weiter geht. (Mit vorsicht zu verwenden)
+\usepackage[backend=biber,abbreviate=true,doi=false,style=numeric-comp,giveninits=true,sorting=none]{biblatex} % Modernes Paket zur Erzeugung von Bibliografien (benötigt biber!)
+\usepackage{csquotes} % Fortgeschrittene Funktionen für Zitate, für die deutsche Form der Anführungszeichen bei Referenzen
+\usepackage[dvipsnames]{xcolor}
+\addbibresource{MyBibliography.bib} % Ort der .bib Datei, die die Datenbank für Literatur/Referenzen enthält.
+
+\graphicspath{{bilder/}}
+
+% place eqn number in brackets for autoref
+\makeatletter
+\def\tagform@#1{\maketag@@@{\ignorespaces#1\unskip\@@italiccorr}}
+\let\orgtheequation\theequation
+\def\theequation{(\orgtheequation)}
+\makeatother
+
+\definecolor{MyBlue}{HTML}{0072B2}
+\definecolor{MyOrange}{HTML}{D55E00}
+\definecolor{MyRed}{HTML}{F00F0F}
+
+\hypersetup{%
+%	colorlinks=true,
+	breaklinks=true,
+	linkcolor=blue,
+	urlcolor=blue,
+	citecolor=blue,
+	linkbordercolor={0 0 1}
+}
+
+\let\oldunit\unit
+\renewcommand{\unit}[1]{\hspace{4pt}\oldunit{#1}}
+
+\DeclareSIUnit{\dBm}{dBm}
+\DeclareSIUnit[per-mode=reciprocal]\WN{\per\centi\meter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%
+\def\settitle{}
+\input{00_Titel}
+
+\section*{Abstract}
+Dieser Versuch beschäftigt sich mit der Funktionsweise eines Halbleiters sowie dem Hall-Effekt. Dabei wird die van-der-Pauw-Methode angewandt, um den spezifischen Widerstand sowie den Hall-Koeffizienten eines Halbleiters zu bestimmen. Eine Halbleiter-Probe wird in einem Kryostaten von Raumtemperatur ausgehend bis etwa 20 K abgekühlt. Während des Abkühlvorgangs werden die genannten Eigenschaften in kleinen Temperaturschritten aufgezeichnet, wodurch wir feststellen können, ob der Halbleiter n- oder p-dotiert ist. Aus diesen Daten lässt sich auch die Beweglichkeit der Ladungsträger, die Ionisierungsenergie der Donatoren bzw. Akzeptoren, sowie die Streumechanismen im Halbleiter bestimmen. Es wird eine direkte Beobachtung der Matthiessenschen Regel diskutiert, sowie festgestellt, dass es sich bei dem zu untersuchenden Material um n-dotiertes Galliumarsenid handelt.
+\vspace{1cm}
+\newpage
+%
+%
+\tableofcontents
+\cleardoublepage
+\pagenumbering{arabic} 
+%
+%
+\setcounter{section}{-1}
+\input{01_Einleitung}
+
+\input{02_Theorie}
+
+\input{03_Durchführung}
+
+\input{04_Ergebnisse}
+
+\input{05_Schlussfolgerung} 
+
+%\input{Anhang} % Der Anhang ist in einer externen Datei "Anhang.tex" und wird hier in das Dokument eingefügt.
+
+\newpage
+
+\printbibliography
+%\vfill
+\clearpage
+
+\include{06_Unterschriften}
+
+\end{document}
