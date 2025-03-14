@@ -1,0 +1,14 @@
+1messung bis 009
+rotlicht 010
+rotlicht + normales licht 011
+ohne licht 012
+
+
+CH1, 10.16, 7.109k
+CH2, 10.04, 7.698k
+
+position, start, stop, counts
+U1, 14:25, 14:40, 51
+U2, 14:44, 14.:59, 59
+U3, 15:05, 15:20, 38
+U4, 15:23, 15:38, 10 1blödsinn

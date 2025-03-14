@@ -1,0 +1,1 @@
+start atlantis.jar -c configuration/config.xml

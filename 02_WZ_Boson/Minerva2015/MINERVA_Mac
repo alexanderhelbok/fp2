@@ -1,0 +1,4 @@
+#!/bin/bash
+
+FOLDER="${BASH_SOURCE%/*}"
+java -jar ${FOLDER}/atlantis.jar -c ${FOLDER}/configuration/config.xml

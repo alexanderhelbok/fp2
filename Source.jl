@@ -15,12 +15,12 @@ include("SourceStatistics.jl")
 @py import scipy.optimize as sciop
 @py import matplotlib.pyplot as plt
 @py import matplotlib as mpl
-@py import mpl_axes_aligner as aligner
+# @py import mpl_axes_aligner as aligner
 plt.style.use("Source.mplstyle")
 
 plt.rc("text", usetex=true)  # enable use of LaTeX in matplotlib
 plt.rc("font", family="sans-serif", serif="Times New Roman", size=14)  # font settings
-plt.rc("text.latex", preamble="\\usepackage{mtpro2} \\usepackage{siunitx} \\usepackage{amsmath}")
+# plt.rc("text.latex", preamble="\\usepackage{mtpro2} \\usepackage{siunitx} \\usepackage{amsmath}")
 plt.rcParams["pgf.texsystem"] = "xelatex"
 
 # missing type combination is x = Vector{Any}, y = Vector{<:Number}

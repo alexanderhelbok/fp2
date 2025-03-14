@@ -1,0 +1,94 @@
+
+<InteractionControl availableInDemoMode="YES" defaultInDemoMode="YES" projectionName="YX">
+    <Panel fileName="ZMR" screenName="ZMR" toolTip="Zoom/Move/Rotate"/>
+    <Panel fileName="RubberbandYX" screenName="RubberBand" toolTip="Rubberband Selection"/>
+    <Panel fileName="Pick" screenName="Pick" toolTip="Show Info for Picked Item"/>
+    <Panel fileName="SynchroCursors" screenName="SyncCursors" toolTip="Synchronised Cursors"/>
+    <Panel fileName="FishEye" screenName="FishEye" toolTip="FishEye Transformation"/>
+    <Panel fileName="Clock" screenName="Clock" toolTip="Clock Transformation"/>
+    <Panel fileName="ScaleCopy" screenName="Scale" toolTip="Scale Interaction"/>
+</InteractionControl>
+<InteractionControl availableInDemoMode="YES" defaultInDemoMode="YES" projectionName="RZ">
+    <Panel fileName="ZMR" screenName="ZMR" toolTip="Zoom/Move/Rotate"/>
+    <Panel fileName="Rubberband" screenName="RubberBand" toolTip="Rubberband Selection"/>
+    <Panel fileName="Pick" screenName="Pick" toolTip="Show Info for Picked Item"/>
+    <Panel fileName="SynchroCursors" screenName="SyncCursors" toolTip="Synchronised Cursors"/>
+    <Panel fileName="FishEye" screenName="FishEye" toolTip="FishEye Transformation"/>
+    <Panel fileName="Skew" screenName="Skew" toolTip="Skew Interaction"/>
+    <Panel fileName="ScaleCopy" screenName="Scale" toolTip="Scale Interaction"/>
+</InteractionControl>
+<InteractionControl availableInDemoMode="YES" defaultInDemoMode="NO" projectionName="XZ">
+    <Panel fileName="ZMR" screenName="ZMR" toolTip="Zoom/Move/Rotate"/>
+    <Panel fileName="Rubberband" screenName="RubberBand" toolTip="Rubberband Selection"/>
+    <Panel fileName="Pick" screenName="Pick" toolTip="Show Info for Picked Item"/>
+    <Panel fileName="SynchroCursors" screenName="SyncCursors" toolTip="Synchronised Cursors"/>
+    <Panel fileName="FishEye" screenName="FishEye" toolTip="FishEye Transformation"/>
+    <Panel fileName="ScaleCopy" screenName="Scale" toolTip="Scale Interaction"/>
+</InteractionControl>
+<InteractionControl availableInDemoMode="YES" defaultInDemoMode="NO" projectionName="YZ">
+    <Panel fileName="ZMR" screenName="ZMR" toolTip="Zoom/Move/Rotate"/>
+    <Panel fileName="Rubberband" screenName="RubberBand" toolTip="Rubberband Selection"/>
+    <Panel fileName="Pick" screenName="Pick" toolTip="Show Info for Picked Item"/>
+    <Panel fileName="SynchroCursors" screenName="SyncCursors" toolTip="Synchronised Cursors"/>
+    <Panel fileName="FishEye" screenName="FishEye" toolTip="FishEye Transformation"/>
+    <Panel fileName="ScaleCopy" screenName="Scale" toolTip="Scale Interaction"/>
+</InteractionControl>
+<InteractionControl availableInDemoMode="YES" defaultInDemoMode="NO" projectionName="FZ">
+    <Panel fileName="ZMR" screenName="ZMR" toolTip="Zoom/Move/Rotate"/>
+    <Panel fileName="Rubberband" screenName="RubberBand" toolTip="Rubberband Selection"/>
+    <Panel fileName="Pick" screenName="Pick" toolTip="Show Info for Picked Item"/>
+    <Panel fileName="SynchroCursors" screenName="SyncCursors" toolTip="Synchronised Cursors"/>
+    <Panel fileName="FishEye" screenName="FishEye" toolTip="FishEye Transformation"/>
+    <Panel fileName="Skew" screenName="Skew" toolTip="Skew Interaction"/>
+    <Panel fileName="ScaleCopy" screenName="Scale" toolTip="Scale Interaction"/>
+</InteractionControl>
+<InteractionControl availableInDemoMode="YES" defaultInDemoMode="NO" projectionName="FR">
+    <Panel fileName="ZMR" screenName="ZMR" toolTip="Zoom/Move/Rotate"/>
+    <Panel fileName="RubberbandYX" screenName="RubberBand" toolTip="Rubberband Selection"/>
+    <Panel fileName="Pick" screenName="Pick" toolTip="Show Info for Picked Item"/>
+    <Panel fileName="SynchroCursors" screenName="SyncCursors" toolTip="Synchronised Cursors"/>
+    <Panel fileName="FishEye" screenName="FishEye" toolTip="FishEye Transformation"/>
+    <Panel fileName="Skew" screenName="Skew" toolTip="Skew Interaction"/>
+    <Panel fileName="ScaleCopy" screenName="Scale" toolTip="Scale Interaction"/>
+</InteractionControl>
+<InteractionControl availableInDemoMode="YES" defaultInDemoMode="YES" projectionName="VP">
+    <Panel fileName="VPSelection" screenName="RubberBand" toolTip="Rubberband Selection"/>
+    <Panel fileName="Pick" screenName="Pick" toolTip="Show Info for Picked Item"/>
+    <Panel fileName="ZMR" screenName="ZMR" toolTip="Zoom/Move/Rotate"/>
+    <Panel fileName="SynchroCursors" screenName="SyncCursors" toolTip="Synchronised Cursors"/>
+    <Panel fileName="ScaleCopy" screenName="Scale" toolTip="Scale Interaction"/>
+</InteractionControl>
+<InteractionControl availableInDemoMode="NO" defaultInDemoMode="NO" projectionName="3D">
+    <Panel fileName="ZMR" screenName="ZMR" toolTip="Zoom/Move/Rotate"/>
+    <Panel fileName="VPSelection" screenName="RubberBand" toolTip="Rubberband Selection"/>
+    <Panel fileName="Pick" screenName="Pick" toolTip="Show Info for Picked Item"/>
+    <Panel fileName="FishEye" screenName="FishEye" toolTip="FishEye Transformation"/>
+    <Panel fileName="SynchroCursors" screenName="SyncCursors" toolTip="Synchronised Cursors"/>
+    <Panel fileName="ScaleCopy" screenName="Scale" toolTip="Scale Interaction"/>
+</InteractionControl>
+<InteractionControl availableInDemoMode="NO" defaultInDemoMode="NO" projectionName="3DBox">
+    <Panel fileName="3DBox" screenName="ZR" toolTip="Zoom/Rotate"/>
+    <!-- temporarily remove "Pick" interaction for 3DBox until it is implemented
+    <Panel fileName="Pick" screenName="Pick" toolTip="Show Info for Picked Item"/>
+    -->
+</InteractionControl>
+<InteractionControl availableInDemoMode="YES" defaultInDemoMode="NO" projectionName="LegoPlot">
+    <Panel fileName="ZMR" screenName="ZMR" toolTip="Zoom/Move/Rotate"/>
+    <Panel fileName="SynchroCursors" screenName="SyncCursors" toolTip="Synchronised Cursors"/>
+    <!-- temporarily remove "Pick" interaction for Lego until it is implemented
+    <Panel fileName="Pick" screenName="Pick" toolTip="Show Info for Picked Item"/>
+    -->
+</InteractionControl>
+<InteractionControl availableInDemoMode="NO" defaultInDemoMode="NO" projectionName="TrackResidual">
+    <Panel fileName="Pick" screenName="Pick" toolTip="Show Info for Picked Item"/>
+</InteractionControl>
+<InteractionControl availableInDemoMode="YES" defaultInDemoMode="NO" projectionName="N3D">
+    <Panel fileName="NZMR" screenName="Rotate" toolTip="Zoom/Move/Rotate"/>
+</InteractionControl>
+<InteractionControl availableInDemoMode="YES" defaultInDemoMode="NO" projectionName="NYX">
+</InteractionControl>
+<InteractionControl availableInDemoMode="YES" defaultInDemoMode="NO" projectionName="NPhysics">
+    <Panel fileName="NZMR" screenName="Rotate" toolTip="Zoom/Move/Rotate"/>
+</InteractionControl>
+<InteractionControl availableInDemoMode="YES" defaultInDemoMode="NO" projectionName="EventInfo">
+</InteractionControl>
